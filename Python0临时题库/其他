@@ -1,0 +1,22 @@
+#  任务二
+```python
+# _*_ coding:utf-8 _*_
+while 1:
+    try:    # 异常处理
+        a = int(input("请输入语文成绩(单科成绩150分)："))
+        if 0 <= a <= 150:   # 成绩判断
+            break
+        else:
+            print("数据错误，请重新输入")
+    except ValueError:
+        print("数据错误，请重新输入")
+
+if a >= 135:
+    print(f"{a}优秀")
+elif a >= 120:
+    print(f"{a}良好")
+elif a >= 90:
+    print(f"{a}合格")
+else:
+    print(f"{a}不合格")
+```
